@@ -5,6 +5,8 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import {Link} from 'wouter'
+
 function header() {
   return (
     <headers>
@@ -16,14 +18,10 @@ function header() {
         {/* <Navbar.Brand href="#">Navbar scroll</Navbar.Brand> */}
         {/* <Navbar.Toggle aria-controls="navbarScroll" /> */}
         <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
-            <Nav.Link href="/">ProShop</Nav.Link>
-            <Nav.Link href="/cart"><i className='fas fa-shopping-cart'></i>Cart</Nav.Link>
-            <Nav.Link href="/login"><i className='fas fa-user'></i>Login</Nav.Link>
+          <Nav bclassName="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
+            <Nav.Link as={Link} to='/home'>ProShop</Nav.Link>
+            <Nav.Link as={Link} to='/cart'><i className='fas fa-shopping-cart'></i>Cart</Nav.Link>
+            <Nav.Link as={Link} to='/login'><i className='fas fa-user'></i>Login</Nav.Link>
             {/* 
             <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="/cart">cart</NavDropdown.Item>

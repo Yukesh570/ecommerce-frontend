@@ -4,9 +4,7 @@ const Rating = ({value,text,color}) => {
   return (
 
     <div className='rating'>
-        <h4>value</h4>
         <span>
-            {console.log(value)}
             <i style={{color}} className={
                 value >= 1 
                 
@@ -21,7 +19,6 @@ const Rating = ({value,text,color}) => {
 
         </span>
         <span>
-            {console.log(value)}
             <i style={{color}} className={
                 value >= 2 
                 
@@ -36,7 +33,6 @@ const Rating = ({value,text,color}) => {
 
         </span>
         <span>
-            {console.log(value)}
             <i style={{color}} className={
                 value >= 3 
                 
@@ -51,7 +47,6 @@ const Rating = ({value,text,color}) => {
 
         </span>
         <span>
-            {console.log(value)}
             <i style={{color}} className={
                 value >= 4
                 
@@ -66,7 +61,6 @@ const Rating = ({value,text,color}) => {
 
         </span>
         <span>
-            {console.log(value)}
             <i style={{color}} className={
                 value >= 5 
                 
